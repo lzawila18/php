@@ -7,3 +7,4 @@ $c = 7E-10;
 print "liczba c = $c<br>";
 $d = 1_234.567;
 print "liczba d = $d<br>";
+?>
