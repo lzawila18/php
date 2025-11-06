@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Proste działania</title>
+</head>
+<body>
+    <h1>Proste działania</h1>
+    <form id="calcForm">
+        <label for="num1">Podaj pierwszą liczbę:</label>
+        <input type="number" id="num1" name="num1"><br><br>
+        <label for="num2">Podaj drugą liczbę:</label>
+        <input type="number" id="num2" name="num2"><br><br>
+        <button type="button" onclick="calculate('add')">Dodawanie</button>
+        <button type="button" onclick="calculate('subtract')">Odejmowanie</button>
+        <button type="button" onclick="calculate('multiply')">Mnożenie</button>
+        <button type="button" onclick="calculate('divide')">Dzielenie</button>
+    </form>
+    <div id="result"></div>
+    <script src="proste_dzialania.js"></script>
+</body>
+</html>
