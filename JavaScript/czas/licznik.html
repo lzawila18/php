@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kolejne liczby co sekundę</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wynik"></div>
+
+    <script>
+        let licznik = 1;
+
+        function wyswietl() {
+            document.getElementById("wynik").textContent = licznik;
+            licznik += 1;
+
+            if (licznik > 10) {
+                licznik = 1;
+            }
+        }
+
+        setInterval(wyswietl, 1000);
+        wyswietl();
+    </script>
+</body>
+</html>
